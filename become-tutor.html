@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Become a Tutor - Levels Academy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo-link">
+                <img src="logo.png" alt="Levels Academy Logo" class="logo-img">
+                <span class="logo-text">Levels Academy</span>
+            </a>
+
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="find-tutor.html">Find a Tutor</a></li>
+                    <li><a href="become-tutor.html" class="active">Become a Tutor</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <a href="https://wa.me/923009429720?text=Hello!%20I%20want%20to%20become%20a%20tutor." 
+               class="btn-whatsapp-header" target="_blank">💬 WhatsApp</a>
+
+            <button class="menu-toggle" id="menuToggle">☰</button>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Become a Tutor</h1>
+            <p>Join Levels Academy and start teaching students today!</p>
+        </div>
+    </section>
+
+    <section class="quick-contact">
+        <div class="container">
+            <div class="quick-contact-box">
+                <div class="quick-contact-text">
+                    <h2>⚡ Ready to Join?</h2>
+                    <p>Message us directly on WhatsApp for quick registration!</p>
+                </div>
+                <a href="https://wa.me/923009429720?text=Hello!%20I%20want%20to%20become%20a%20tutor." 
+                   class="btn btn-whatsapp btn-large" target="_blank">
+                    💬 WhatsApp Now: 0300-9429720
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="form-section">
+        <div class="container">
+            
+            <div class="or-divider">
+                <span>OR FILL THE FORM BELOW</span>
+            </div>
+
+            <div class="form-wrapper">
+
+                <div class="form-info">
+                    <h2>Why Join Us?</h2>
+
+                    <div class="step">
+                        <div class="step-number">💰</div>
+                        <div>
+                            <h3>Earn Good Income</h3>
+                            <p>Get paid per hour with regular monthly payments</p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">📚</div>
+                        <div>
+                            <h3>Flexible Subjects</h3>
+                            <p>Teach whatever subject and class you prefer</p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">⏰</div>
+                        <div>
+                            <h3>Flexible Timings</h3>
+                            <p>Choose your own hours — morning, evening, or night</p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">🏠</div>
+                        <div>
+                            <h3>Home or Online</h3>
+                            <p>Teach at students' homes or online from your home</p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">📍</div>
+                        <div>
+                            <h3>Local & Nearby</h3>
+                            <p>Students from Arifwala, Pakpattan, Sahiwal, Burewala, Qaboola</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="form-box">
+                    <h2>Tutor Registration</h2>
+                    <p>Fill this form — WhatsApp will open with your details</p>
+
+                    <form id="becomeTutorForm">
+                        <div class="form-group">
+                            <label for="tutorName">Your Full Name *</label>
+                            <input type="text" id="tutorName" placeholder="e.g. Ahmed Khan" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="tutorPhone">Your WhatsApp Number *</label>
+                                <input type="tel" id="tutorPhone" placeholder="e.g. 0300-1234567" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="tutorEmail">Email (Optional)</label>
+                                <input type="email" id="tutorEmail" placeholder="e.g. ahmed@gmail.com">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="qualification">Your Qualification *</label>
+                            <select id="qualification" required>
+                                <option value="">Select</option>
+                                <option>Intermediate (FA/FSc)</option>
+                                <option>Bachelor's (BA/BSc)</option>
+                                <option>Master's (MA/MSc)</option>
+                                <option>MPhil</option>
+                                <option>PhD</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="tutorSubjects">Subjects You Can Teach *</label>
+                            <input type="text" id="tutorSubjects" 
+                                   placeholder="e.g. Mathematics, Physics, English" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="tutorClasses">Classes You Can Teach *</label>
+                            <input type="text" id="tutorClasses" 
+                                   placeholder="e.g. Primary, Matric, FSc" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="tutorMode">Preferred Mode *</label>
+                                <select id="tutorMode" required>
+                                    <option value="">Select</option>
+                                    <option>Home Tutoring</option>
+                                    <option>Online Tutoring</option>
+                                    <option>Both</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="tutorArea">Your Area *</label>
+                                <select id="tutorArea" required>
+                                    <option value="">Select</option>
+                                    <option>Arifwala</option>
+                                    <option>Pakpattan</option>
+                                    <option>Sahiwal</option>
+                                    <option>Burewala</option>
+                                    <option>Qaboola</option>
+                                    <option>Other (within 70 km)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="experience">Experience *</label>
+                                <select id="experience" required>
+                                    <option value="">Select</option>
+                                    <option>Fresher (0-1 year)</option>
+                                    <option>1-3 years</option>
+                                    <option>3-5 years</option>
+                                    <option>5+ years</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="expectedFee">Expected Fee (per month)</label>
+                                <input type="text" id="expectedFee" placeholder="e.g. PKR 8000-15000">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="tutorMessage">About Yourself (Optional)</label>
+                            <textarea id="tutorMessage" rows="3" 
+                                      placeholder="e.g. I have 3 years experience teaching Math to Matric students..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full">
+                            💬 Submit via WhatsApp
+                        </button>
+
+                        <p class="form-note">* WhatsApp will open with your details for review</p>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <img src="logo.png" alt="Levels Academy" class="footer-logo">
+                <p>Trusted Home & Online Tutoring Service in Arifwala and nearby areas.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="find-tutor.html">Find a Tutor</a></li>
+                    <li><a href="become-tutor.html">Become a Tutor</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul>
+                    <li>📞 0300-9429720</li>
+                    <li>✉️ levelsacademy100@gmail.com</li>
+                    <li>📍 Arifwala, Punjab, Pakistan</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="https://www.google.com/search?q=Levels+Academy+Arifwala" target="_blank">🌐 Google Business</a>
+                    <a href="https://www.facebook.com/profile.php?id=61573426960703" target="_blank">📘 Facebook</a>
+                    <a href="https://www.instagram.com/levelsacademy100/" target="_blank">📷 Instagram</a>
+                    <a href="https://www.youtube.com/@LevelsAcademy" target="_blank">▶️ YouTube</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Levels Academy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/923009429720?text=Hello!%20I%20want%20to%20become%20a%20tutor." 
+       class="whatsapp-float" target="_blank">💬</a>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('becomeTutorForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const name = document.getElementById('tutorName').value;
+            const phone = document.getElementById('tutorPhone').value;
+            const email = document.getElementById('tutorEmail').value;
+            const qualification = document.getElementById('qualification').value;
+            const subjects = document.getElementById('tutorSubjects').value;
+            const classes = document.getElementById('tutorClasses').value;
+            const mode = document.getElementById('tutorMode').value;
+            const area = document.getElementById('tutorArea').value;
+            const experience = document.getElementById('experience').value;
+            const fee = document.getElementById('expectedFee').value;
+            const msg = document.getElementById('tutorMessage').value;
+
+            const whatsappMessage =
+                `Hello! I want to become a tutor.%0A%0A` +
+                `👤 Name: ${name}%0A` +
+                `📞 WhatsApp: ${phone}` +
+                (email ? `%0A📧 Email: ${email}` : '') +
+                `%0A🎓 Qualification: ${qualification}%0A` +
+                `📚 Subjects: ${subjects}%0A` +
+                `🏫 Classes: ${classes}%0A` +
+                `🏠 Mode: ${mode}%0A` +
+                `📍 Area: ${area}%0A` +
+                `⏳ Experience: ${experience}` +
+                (fee ? `%0A💰 Expected Fee: ${fee}` : '') +
+                (msg ? `%0A%0A📝 About: ${msg}` : '');
+
+            const whatsappURL = `https://wa.me/923009429720?text=${whatsappMessage}`;
+            window.open(whatsappURL, '_blank');
+        });
+    </script>
+</body>
+</html>

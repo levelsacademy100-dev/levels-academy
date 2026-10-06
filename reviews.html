@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews - Levels Academy</title>
+    <meta name="description" content="Read reviews from students and parents about Levels Academy - home & online tutoring across Pakistan.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo-link">
+                <img src="logo.png" alt="Levels Academy Logo" class="logo-img">
+                <span class="logo-text">Levels Academy</span>
+            </a>
+
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="find-tutor.html">Find a Tutor</a></li>
+                    <li><a href="become-tutor.html">Become a Tutor</a></li>
+                    <li><a href="reviews.html" class="active">Reviews</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <a href="https://wa.me/923009429720?text=Hello!%20I%20need%20a%20tutor." 
+               class="btn-whatsapp-header" target="_blank">💬 WhatsApp</a>
+
+            <button class="menu-toggle" id="menuToggle">☰</button>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>What Our Students & Parents Say</h1>
+            <p>Reviews from students and parents across Pakistan — Home & Online Tutoring</p>
+        </div>
+    </section>
+
+    <!-- RATING SUMMARY -->
+    <section class="rating-summary">
+        <div class="container">
+            <div class="rating-box">
+                <div class="rating-left">
+                    <div class="big-rating">3.4</div>
+                    <div class="big-stars">★★★☆☆</div>
+                    <div class="rating-count">Based on 5+ Google reviews</div>
+                </div>
+                <div class="rating-right">
+                    <div class="rating-bar">
+                        <span>5★</span>
+                        <div class="bar"><div class="fill" style="width: 40%"></div></div>
+                        <span>2</span>
+                    </div>
+                    <div class="rating-bar">
+                        <span>4★</span>
+                        <div class="bar"><div class="fill" style="width: 20%"></div></div>
+                        <span>1</span>
+                    </div>
+                    <div class="rating-bar">
+                        <span>3★</span>
+                        <div class="bar"><div class="fill" style="width: 20%"></div></div>
+                        <span>1</span>
+                    </div>
+                    <div class="rating-bar">
+                        <span>2★</span>
+                        <div class="bar"><div class="fill" style="width: 20%"></div></div>
+                        <span>1</span>
+                    </div>
+                    <div class="rating-bar">
+                        <span>1★</span>
+                        <div class="bar"><div class="fill" style="width: 0%"></div></div>
+                        <span>0</span>
+                    </div>
+                </div>
+                <div class="rating-actions">
+                    <a href="https://www.google.com/search?q=Levels+Academy+Arifwala" 
+                       class="btn btn-primary" target="_blank">🌐 View on Google</a>
+                    <a href="https://wa.me/923009429720?text=Hello!%20I%20want%20to%20share%20my%20review." 
+                       class="btn btn-whatsapp" target="_blank">💬 Share Your Review</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FILTERS -->
+    <section class="reviews-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Reviews</button>
+                <button class="filter-btn" data-filter="parents">👨‍👩‍👧 Parents</button>
+                <button class="filter-btn" data-filter="students">🎓 Students</button>
+                <button class="filter-btn" data-filter="5star">⭐⭐⭐⭐⭐ 5-Star</button>
+                <button class="filter-btn" data-filter="online">💻 Online</button>
+                <button class="filter-btn" data-filter="home">🏠 Home</button>
+            </div>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="🔍 Search reviews by name, city, or subject...">
+            </div>
+        </div>
+    </section>
+
+    <!-- REVIEWS GRID -->
+    <section class="reviews-list">
+        <div class="container">
+            <div class="reviews-grid" id="reviewsGrid">
+
+                <!-- Review 1 -->
+                <div class="review-item" data-category="parents 5star home">
+                    <div class="review-header">
+                        <div class="reviewer-avatar">A</div>
+                        <div class="reviewer-info">
+                            <strong>Ahmed Raza</strong>
+                            <span>Parent • Arifwala</span>
+                        </div>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">Excellent tutors! My son's Math improved a lot within 2 months. The tutor was very professional and always on time. Highly recommended!</p>
+                    <div class="review-tags">
+                        <span>Home Tutoring</span>
+                        <span>Mathematics</span>
+                    </div>
+                    <div class="review-date">2 weeks ago</div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="review-item" data-category="parents 5star online">
+                    <div class="review-header">
+                        <div class="reviewer-avatar">F</div>
+                        <div class="reviewer-info">
+                            <strong>Fatima Khan</strong>
+                            <span>Parent • Lahore</span>
+                        </div>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">Best academy in the region. Very professional and affordable. Teachers are very cooperative and my daughter's grades improved from C to A.</p>
+                    <div class="review-tags">
+                        <span>Online Tutoring</span>
+                        <span>English</span>
+                    </div>
+                    <div class="review-date">1 month ago</div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="review-item" data-category="students 5star online">
+                    <div class="review-header">
+                        <div class="reviewer-avatar">U</div>
+                        <div class="reviewer-info">
+                            <strong>Usman Ali</strong>
+                            <span>Student • Sahiwal</span>
+                        </div>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">Online tutoring is very convenient. I take Physics classes via Zoom. The teacher explains everything so clearly. Great service!</p>
+                    <div class="review-tags">
+                        <span>Online</span>
+                        <span>Physics</span>
+                    </div>
+                    <div class="review-date">3 weeks ago</div>
+                </div>
+
+                <!-- Review 4 -->
+                <div class="review-item" data-category="parents 5star home">
+                    <div class="review-header">
+                        <div class="reviewer-avatar">S</div>
+                        <div class="reviewer-info">
+                            <strong>Sadia Bibi</strong>
+                            <span>Parent • Arifwala</span>
+                        </div>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">Meri beti ko Chemistry mein bohat masla tha. Levels Academy ne bohat acha tutor arrange kiya. Ab wo top kar rahi hai.</p>
+                    <div class="review-tags">
+                        <span>Home</span>
+                        <span>Chemistry</span>
+                    </div>
+                    <div class="review-date">1 month ago</div>
+                </div>
+
+                <!-- Review 5 -->
+                <div class="review-item" data-category="students 5star home">
+                    <div class="review-header">
+                        <div class="reviewer-avatar">H</div>
+                        <div class="reviewer-info">
+                            <strong>Hassan Ahmed</strong>
+                            <span>Student • Burewala</span>
+                        </div>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">I got 92% in Matric because of Levels Academy. My Math and Physics tutor was amazing. Thank you so much!</p>
+                    <div class="review-tags">
+                        <span>Home</span>
+                        <span>Matric</span>
+                    </div>
+                    <div class="review-date">2 months ago</div>
+                </div>
+
+                <!-- Review 6 -->
+                <div class="review-item" data-category="parents 4star online">
+                    <div class="review-header">
+                        <div class="reviewer-avatar">M</div>
+                        <div class="reviewer-info">
+                            <strong>Muhammad Imran</strong>
+                            <span>Parent • Qaboola</span>
+                        </div>
+                    </div>
+                    <div class="review-stars">★★★★☆</div>
+                    <p class="review-text">Very good service. Tutor is punctual and my son enjoys the classes. Only suggestion: fee could be slightly lower.</p>
+                    <div class="review-tags">
+                        <span>Home</span>
+                        <span>Science</span>
+                    </div>
+                    <div class="review-date">3 weeks ago</div>
+                </div>
+
+                <!-- Review 7 -->
+                <div class="review-item" data-category="parents 5star online">
+                    <div class="review-header">
+                        <div class="reviewer-avatar">A</div>
+                        <div class="reviewer-info">
+                            <strong>Ayesha Malik</strong>
+                            <span>Parent • Lahore</span>
+                        </div>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">My daughter is taking online English classes. She has become very confident in speaking. Highly professional service.</p>
+                    <div class="review-tags">
+                        <span>Online</span>
+                        <span>English</span>
+                    </div>
+                    <div class="review-date">1 month ago</div>
+                </div>
+
+                <!-- Review 8 -->
+                <div class="review-item" data-category="students 5star home">
+                    <div class="review-header">
+                        <div class="reviewer-avatar">B</div>
+                        <div class="reviewer-info">
+                            <strong>Bilal Hussain</strong>
+                            <span>Student • Pakpattan</span>
+                        </div>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">Best decision of my life. FSc Pre-Medical ke liye tutor mila. Ab MDCAT ki tayari kar raha hun. Highly recommended.</p>
+                    <div class="review-tags">
+                        <span>Home</span>
+                        <span>Biology</span>
+                    </div>
+                    <div class="review-date">6 weeks ago</div>
+                </div>
+
+                <!-- Review 9 -->
+                <div class="review-item" data-category="parents 5star home">
+                    <div class="review-header">
+                        <div class="reviewer-avatar">N</div>
+                        <div class="reviewer-info">
+                            <strong>Nadia Sultan</strong>
+                            <span>Parent • Sahiwal</span>
+                        </div>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">Bohat acha experience raha. Tutor bohat mehnat karta hai. Mere bete ke Urdu aur Islamiat mein bohat behtari aayi.</p>
+                    <div class="review-tags">
+                        <span>Home</span>
+                        <span>Urdu, Islamiat</span>
+                    </div>
+                    <div class="review-date">2 months ago</div>
+                </div>
+
+                <!-- Review 10 -->
+                <div class="review-item" data-category="students 5star online">
+                    <div class="review-header">
+                        <div class="reviewer-avatar">Z</div>
+                        <div class="reviewer-info">
+                            <strong>Zainab Fatima</strong>
+                            <span>Student • Lahore</span>
+                        </div>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">I'm from a small village and online classes have been a blessing. Got A+ in O Levels. Thank you Levels Academy!</p>
+                    <div class="review-tags">
+                        <span>Online</span>
+                        <span>O Levels</span>
+                    </div>
+                    <div class="review-date">5 weeks ago</div>
+                </div>
+
+                <!-- Review 11 -->
+                <div class="review-item" data-category="parents 5star home">
+                    <div class="review-header">
+                        <div class="reviewer-avatar">R</div>
+                        <div class="reviewer-info">
+                            <strong>Rashid Mehmood</strong>
+                            <span>Parent • Arifwala</span>
+                        </div>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">Mere teen bachon ke liye tutors arrange kiye. Teeno bohat khush hain. Fees bhi reasonable hai. Highly satisfied.</p>
+                    <div class="review-tags">
+                        <span>Home</span>
+                        <span>All Subjects</span>
+                    </div>
+                    <div class="review-date">2 months ago</div>
+                </div>
+
+                <!-- Review 12 -->
+                <div class="review-item" data-category="students 5star online">
+                    <div class="review-header">
+                        <div class="reviewer-avatar">S</div>
+                        <div class="reviewer-info">
+                            <strong>Saad Khan</strong>
+                            <span>Student • Sahiwal</span>
+                        </div>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">Excellent online classes. Computer Science ke liye best tutor mila. Coding seekh raha hun. Highly recommended!</p>
+                    <div class="review-tags">
+                        <span>Online</span>
+                        <span>Computer Science</span>
+                    </div>
+                    <div class="review-date">3 weeks ago</div>
+                </div>
+
+                <!-- Review 13 -->
+                <div class="review-item" data-category="parents 5star home">
+                    <div class="review-header">
+                        <div class="reviewer-avatar">R</div>
+                        <div class="reviewer-info">
+                            <strong>Rukhsana Aslam</strong>
+                            <span>Parent • Burewala</span>
+                        </div>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">Home tutor bohat acha mila. Meri beti ki personality bhi badli hai. Confidence barha hai. Shukriya Levels Academy.</p>
+                    <div class="review-tags">
+                        <span>Home</span>
+                        <span>Primary</span>
+                    </div>
+                    <div class="review-date">1 month ago</div>
+                </div>
+
+                <!-- Review 14 -->
+                <div class="review-item" data-category="students 5star home">
+                    <div class="review-header">
+                        <div class="reviewer-avatar">A</div>
+                        <div class="reviewer-info">
+                            <strong>Ali Hamza</strong>
+                            <span>Student • Arifwala</span>
+                        </div>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">Got 88% in FSc due to my Math tutor. Best academy in Arifwala for serious students. Recommended to all.</p>
+                    <div class="review-tags">
+                        <span>Home</span>
+                        <span>FSc Math</span>
+                    </div>
+                    <div class="review-date">2 months ago</div>
+                </div>
+
+                <!-- Review 15 -->
+                <div class="review-item" data-category="parents 5star online">
+                    <div class="review-header">
+                        <div class="reviewer-avatar">K</div>
+                        <div class="reviewer-info">
+                            <strong>Kiran Shahzadi</strong>
+                            <span>Parent • Pakpattan</span>
+                        </div>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">Online class ne meri beti ki life badal di. Wo ab Physics mein expert hai. Teacher bohat acha hai.</p>
+                    <div class="review-tags">
+                        <span>Online</span>
+                        <span>Physics</span>
+                    </div>
+                    <div class="review-date">4 weeks ago</div>
+                </div>
+
+            </div>
+
+            <div class="no-results" id="noResults" style="display:none;">
+                <p>😔 No reviews found. Try a different search.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container cta-content">
+            <h2>Ready to Join Our Happy Students?</h2>
+            <p>Contact us now and get a verified tutor within 24 hours!</p>
+            <a href="https://wa.me/923009429720?text=Hello!%20I%20need%20a%20tutor." 
+               class="btn btn-whatsapp btn-large" target="_blank">
+                💬 WhatsApp: 0300-9429720
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <img src="logo.png" alt="Levels Academy" class="footer-logo">
+                <p>Trusted Home & Online Tutoring Service. Head Office: Lahore, DHA Phase 3, Y Block.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="find-tutor.html">Find a Tutor</a></li>
+                    <li><a href="become-tutor.html">Become a Tutor</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul>
+                    <li>📞 0300-9429720</li>
+                    <li>✉️ levelsacademy100@gmail.com</li>
+                    <li>📍 Arifwala, Punjab, Pakistan</li>
+                    <li>🏢 Head Office: Lahore, DHA Ph 3, Y Block</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="https://www.google.com/search?q=Levels+Academy+Arifwala" target="_blank">🌐 Google Business</a>
+                    <a href="https://www.facebook.com/profile.php?id=61573426960703" target="_blank">📘 Facebook</a>
+                    <a href="https://www.instagram.com/levelsacademy100/" target="_blank">📷 Instagram</a>
+                    <a href="https://www.youtube.com/@LevelsAcademy" target="_blank">▶️ YouTube</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Levels Academy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/923009429720?text=Hello!%20I%20need%20a%20tutor." 
+       class="whatsapp-float" target="_blank">💬</a>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const reviews = document.querySelectorAll('.review-item');
+            const searchInput = document.getElementById('searchInput');
+            const noResults = document.getElementById('noResults');
+
+            let currentFilter = 'all';
+            let currentSearch = '';
+
+            function applyFilters() {
+                let visibleCount = 0;
+                reviews.forEach(review => {
+                    const categories = review.getAttribute('data-category') || '';
+                    const text = review.textContent.toLowerCase();
+
+                    const matchesFilter = currentFilter === 'all' || categories.includes(currentFilter);
+                    const matchesSearch = currentSearch === '' || text.includes(currentSearch);
+
+                    if (matchesFilter && matchesSearch) {
+                        review.style.display = 'block';
+                        visibleCount++;
+                    } else {
+                        review.style.display = 'none';
+                    }
+                });
+
+                noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+            }
+
+            filterButtons.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    filterButtons.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    currentFilter = this.getAttribute('data-filter');
+                    applyFilters();
+                });
+            });
+
+            searchInput.addEventListener('input', function() {
+                currentSearch = this.value.toLowerCase().trim();
+                applyFilters();
+            });
+        });
+    </script>
+</body>
+</html>

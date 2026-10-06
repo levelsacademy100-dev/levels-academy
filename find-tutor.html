@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find a Tutor - Levels Academy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo-link">
+                <img src="logo.png" alt="Levels Academy Logo" class="logo-img">
+                <span class="logo-text">Levels Academy</span>
+            </a>
+
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="find-tutor.html" class="active">Find a Tutor</a></li>
+                    <li><a href="become-tutor.html">Become a Tutor</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <a href="https://wa.me/923009429720?text=Hello!%20I%20need%20a%20tutor." 
+               class="btn-whatsapp-header" target="_blank">💬 WhatsApp</a>
+
+            <button class="menu-toggle" id="menuToggle">☰</button>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Find a Tutor</h1>
+            <p>Tell us your requirement — your tutor will be arranged within 5 minutes!</p>
+        </div>
+    </section>
+
+    <section class="quick-contact">
+        <div class="container">
+            <div class="quick-contact-box">
+                <div class="quick-contact-text">
+                    <h2>⚡ Need a Tutor Urgently?</h2>
+                    <p>Skip the form — message us directly on WhatsApp and get instant response!</p>
+                </div>
+                <a href="https://wa.me/923009429720?text=Hello!%20I%20need%20a%20tutor." 
+                   class="btn btn-whatsapp btn-large" target="_blank">
+                    💬 WhatsApp Now: 0300-9429720
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="form-section">
+        <div class="container">
+            
+            <div class="or-divider">
+                <span>OR FILL THE FORM BELOW</span>
+            </div>
+
+            <div class="form-wrapper">
+
+                <div class="form-info">
+                    <h2>How It Works?</h2>
+
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div>
+                            <h3>Fill the Form</h3>
+                            <p>Tell us your requirement in the form below</p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div>
+                            <h3>WhatsApp Opens</h3>
+                            <p>After submitting, WhatsApp will open automatically</p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div>
+                            <h3>Send the Message</h3>
+                            <p>Just tap Send — we'll reply instantly</p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div>
+                            <h3>Tutor Assigned</h3>
+                            <p>Your tutor will be assigned within 24 hours</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-box">
+                    <h2>Tell Us Your Requirement</h2>
+                    <p>Fill the form below — WhatsApp will open after you submit</p>
+
+                    <form id="tutorForm">
+                        <div class="form-group">
+                            <label for="name">Your Name *</label>
+                            <input type="text" id="name" placeholder="e.g. Ahmed Khan" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="class">Class *</label>
+                                <select id="class" required>
+                                    <option value="">Select</option>
+                                    <option>Primary (1-5)</option>
+                                    <option>Middle (6-8)</option>
+                                    <option>Matric (9-10)</option>
+                                    <option>FSc / Inter</option>
+                                    <option>O Levels</option>
+                                    <option>A Levels</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <select id="subject" required>
+                                    <option value="">Select</option>
+                                    <option>Mathematics</option>
+                                    <option>Physics</option>
+                                    <option>Chemistry</option>
+                                    <option>Biology</option>
+                                    <option>English</option>
+                                    <option>Urdu</option>
+                                    <option>Islamiat</option>
+                                    <option>Computer Science</option>
+                                    <option>Statistics</option>
+                                    <option>Pak Studies</option>
+                                    <option>All Subjects</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="mode">Tutoring Mode *</label>
+                                <select id="mode" required>
+                                    <option value="">Select</option>
+                                    <option>Home Tutoring</option>
+                                    <option>Online Tutoring</option>
+                                    <option>Both</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="area">Your Area *</label>
+                                <select id="area" required>
+                                    <option value="">Select</option>
+                                    <option>Arifwala</option>
+                                    <option>Pakpattan</option>
+                                    <option>Sahiwal</option>
+                                    <option>Burewala</option>
+                                    <option>Qaboola</option>
+                                    <option>Other (within 70 km)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Your WhatsApp Number *</label>
+                            <input type="tel" id="phone" placeholder="e.g. 0300-1234567" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Anything Else? (Optional)</label>
+                            <textarea id="message" rows="3" placeholder="e.g. Child is weak in Math, need 3 days a week..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full">
+                            💬 Send via WhatsApp
+                        </button>
+
+                        <p class="form-note">* WhatsApp will open automatically with your details</p>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <img src="logo.png" alt="Levels Academy" class="footer-logo">
+                <p>Trusted Home & Online Tutoring Service in Arifwala and nearby areas.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="find-tutor.html">Find a Tutor</a></li>
+                    <li><a href="become-tutor.html">Become a Tutor</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul>
+                    <li>📞 0300-9429720</li>
+                    <li>✉️ levelsacademy100@gmail.com</li>
+                    <li>📍 Arifwala, Punjab, Pakistan</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="https://www.google.com/search?q=Levels+Academy+Arifwala" target="_blank">🌐 Google Business</a>
+                    <a href="https://www.facebook.com/profile.php?id=61573426960703" target="_blank">📘 Facebook</a>
+                    <a href="https://www.instagram.com/levelsacademy100/" target="_blank">📷 Instagram</a>
+                    <a href="https://www.youtube.com/@LevelsAcademy" target="_blank">▶️ YouTube</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Levels Academy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/923009429720?text=Hello!%20I%20need%20a%20tutor." 
+       class="whatsapp-float" target="_blank">💬</a>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('tutorForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const classLevel = document.getElementById('class').value;
+            const subject = document.getElementById('subject').value;
+            const mode = document.getElementById('mode').value;
+            const area = document.getElementById('area').value;
+            const phone = document.getElementById('phone').value;
+            const message = document.getElementById('message').value;
+
+            const whatsappMessage =
+                `Hello! I need a tutor.%0A%0A` +
+                `👤 Name: ${name}%0A` +
+                `🎓 Class: ${classLevel}%0A` +
+                `📚 Subject: ${subject}%0A` +
+                `🏠 Mode: ${mode}%0A` +
+                `📍 Area: ${area}%0A` +
+                `📞 Phone: ${phone}` +
+                (message ? `%0A%0A📝 Message: ${message}` : '');
+
+            const whatsappURL = `https://wa.me/923009429720?text=${whatsappMessage}`;
+            window.open(whatsappURL, '_blank');
+        });
+    </script>
+</body>
+</html>
