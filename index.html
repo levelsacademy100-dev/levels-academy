@@ -30,8 +30,11 @@
 .ft-hero h1{font-size:clamp(32px,4.6vw,54px);line-height:1.1;margin:0 0 20px;font-weight:900}
 .ft-hero h1 span{color:var(--red)}
 .ft-hero p{font-size:18px;line-height:1.7;max-width:760px}
-.ft-kw{margin-top:16px;line-height:2;font-weight:700}
-.ft-kw a{color:#ffd369;text-decoration:underline dotted;margin-right:4px}
+.ft-kw{margin-top:20px;display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.ft-kw-l{flex-basis:100%;color:#ffd369;font-weight:900;font-size:15px;letter-spacing:.4px;text-transform:uppercase}
+.ft-kw a{display:inline-flex;align-items:center;gap:6px;padding:8px 17px;border-radius:25px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.3);color:#fff;font-weight:800;font-size:15px;text-decoration:none;transition:.2s}
+.ft-kw a:before{content:"📍";font-size:13px}
+.ft-kw a:hover{background:var(--red);border-color:var(--red);transform:translateY(-2px);box-shadow:0 8px 18px rgba(0,0,0,.2)}
 .ft-btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
 .ft-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 23px;border-radius:35px;text-decoration:none;font-weight:900;transition:.2s;border:0;cursor:pointer;font-size:16px}
 .ft-btn:hover{transform:translateY(-2px)}
@@ -81,7 +84,7 @@
 .ft-final p{max-width:800px;margin:0 auto;line-height:1.8;font-size:17px}
 .ft-final .ft-btns{justify-content:center}
 @media(max-width:900px){.ft-grid2,.ft-split{grid-template-columns:1fr}.ft-fg,.ft-cards{grid-template-columns:1fr 1fr}.ft-sg{grid-template-columns:1fr 1fr;row-gap:22px}}
-@media(max-width:600px){.ft-hero{padding:48px 0 38px}.ft-fg,.ft-cards{grid-template-columns:1fr}.ft-sec{padding:46px 0}.ft-card{padding:22px}}
+@media(max-width:600px){.ft-hero{padding:48px 0 38px}.ft-fg,.ft-cards{grid-template-columns:1fr}.ft-sec{padding:46px 0}.ft-card{padding:22px}.ft-kw a{padding:7px 14px;font-size:14px}}
 
 .ix-search{margin-top:-34px;position:relative;z-index:5}
 .ix-search .ft-search{padding:24px}
@@ -141,8 +144,8 @@
 <div class="ft-badge">⭐ Home & Online Tutoring Across Pakistan</div>
 <h1>Find the Right <span>Home Tutor</span> or <span>Online Tutor</span> in Pakistan</h1>
 <p>Male and female tutors for every subject and every class: Matric, FSc, O Level, A Level, IGCSE, MDCAT and more. Learn at home or online from anywhere. Private students can also send admission for Board (regular or supply), Federal Board, O Level and A Level.</p>
-<div class="ft-kw">Home Tutor in:
-<a href="find-tutor.html?city=Lahore#tutor-request">Lahore</a>|<a href="find-tutor.html?city=Islamabad#tutor-request">Islamabad</a>|<a href="find-tutor.html?city=Karachi#tutor-request">Karachi</a>|<a href="find-tutor.html?city=Rawalpindi#tutor-request">Rawalpindi</a>|<a href="find-tutor.html?city=Faisalabad#tutor-request">Faisalabad</a>|<a href="find-tutor.html?city=Multan#tutor-request">Multan</a>|<a href="find-tutor.html?city=Sahiwal#tutor-request">Sahiwal</a>|<a href="find-tutor.html?city=Pakpattan#tutor-request">Pakpattan</a>|<a href="find-tutor.html?city=Arifwala#tutor-request">Arifwala</a>
+<div class="ft-kw"><span class="ft-kw-l">Home Tutor in:</span>
+<a href="find-tutor.html?city=Lahore#tutor-request">Lahore</a><a href="find-tutor.html?city=Islamabad#tutor-request">Islamabad</a><a href="find-tutor.html?city=Karachi#tutor-request">Karachi</a><a href="find-tutor.html?city=Rawalpindi#tutor-request">Rawalpindi</a><a href="find-tutor.html?city=Faisalabad#tutor-request">Faisalabad</a><a href="find-tutor.html?city=Multan#tutor-request">Multan</a><a href="find-tutor.html?city=Sahiwal#tutor-request">Sahiwal</a><a href="find-tutor.html?city=Pakpattan#tutor-request">Pakpattan</a><a href="find-tutor.html?city=Arifwala#tutor-request">Arifwala</a>
 </div>
 <div class="ft-btns">
 <a href="find-tutor.html#tutor-request" class="ft-btn ft-red">🔎 Find a Tutor</a>
