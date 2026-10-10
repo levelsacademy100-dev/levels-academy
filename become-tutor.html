@@ -81,6 +81,12 @@ html{scroll-behavior:smooth}
 .bt-file small{margin:0 0 10px}
 .bt-consent{display:flex;gap:10px;align-items:flex-start;font-size:14px;line-height:1.6;color:var(--text);margin:8px 0 18px}
 .bt-consent input{margin-top:4px;accent-color:var(--blue)}
+.bt-box{border-radius:16px;padding:20px;border:1px solid var(--bd)}
+.bt-box.b1{background:#eef3ff}.bt-box.b2{background:#fff8e6;border-color:#f3e3b0}.bt-box.b3{background:#e9f9ef;border-color:#c6ecd4}
+.bt-box>label,.bt-box>.lb{font-size:15px;color:var(--blue)}
+.bt-box.b2>label{color:#a8780a}.bt-box.b3>label{color:#14864a}
+.bt-box>small{margin:0 0 10px;font-size:12.5px}
+.bt-box .bt-f{margin-bottom:12px}
 .bt-hp{position:absolute;left:-9999px;height:0;width:0;opacity:0}
 .bt-submit{width:100%;padding:16px;font-size:17px}
 .bt-submit:disabled{opacity:.7;cursor:wait}
@@ -109,7 +115,7 @@ html{scroll-behavior:smooth}
 {"@type":"Question","name":"Who can apply as a tutor at Levels Academy?","acceptedAnswer":{"@type":"Answer","text":"Graduates, university students in their later years, and experienced teachers who are strong in at least one subject can apply. Both male and female tutors are welcome."}},
 {"@type":"Question","name":"Is there a fee to register?","acceptedAnswer":{"@type":"Answer","text":"No. Please do not pay anyone for registration. If a family and tutor agree to start classes, the monthly fee is discussed clearly before the first lesson."}},
 {"@type":"Question","name":"Can I teach online from home?","acceptedAnswer":{"@type":"Answer","text":"Yes. Choose online, home or both when you apply. Online tutors need a stable internet connection and a quiet place to teach on Zoom or Google Meet."}},
-{"@type":"Question","name":"Do you need a demo video?","acceptedAnswer":{"@type":"Answer","text":"A short intro video is optional but helps. It lets us see how clearly you explain a topic and speeds up approval."}},
+{"@type":"Question","name":"Is a demo video required?","acceptedAnswer":{"@type":"Answer","text":"Yes. A 5 to 10 minute demo video lets us see how clearly you explain a topic. It is used only for our review and helps us match you with the right students."}},
 {"@type":"Question","name":"How soon will I hear back?","acceptedAnswer":{"@type":"Answer","text":"We try to contact shortlisted applicants on WhatsApp within a few days. After a short call and document check, your profile goes into our matching list."}}]}
 ]}
 </script>
@@ -207,7 +213,7 @@ html{scroll-behavior:smooth}
 <!-- APPLICATION -->
 <section class="bt-sec" id="apply">
 <div class="container">
-<div class="bt-title"><h2>Tutor Registration Form</h2><p>It takes about five minutes. Fields marked * are required.</p></div>
+<div class="bt-title"><h2>Tutor Registration Form</h2><p>Fields marked * are required. All other fields are optional but strengthen your profile.</p></div>
 <div class="bt-wrap">
 
 <aside class="bt-aside">
@@ -216,9 +222,9 @@ html{scroll-behavior:smooth}
 <ul class="bt-tick">
 <li>A clear, recent photo of yourself</li>
 <li>Your CV or resume as a PDF</li>
-<li>List of classes and subjects you can teach</li>
+<li>Your education and teaching history, with years and marks</li>
 <li>Your free days and timings</li>
-<li>Optional: a short intro video (3 to 5 minutes) teaching one topic</li>
+<li>A 5 to 10 minute demo video teaching one topic</li>
 </ul>
 <p style="margin-top:18px">Your CV, phone number and documents are used only by our team for verification and matching. We do not publish them.</p>
 <a href="https://wa.me/923009429720?text=Hello%20Levels%20Academy%2C%20I%20want%20to%20join%20as%20a%20tutor" class="bt-btn bt-green" style="width:100%;box-sizing:border-box;margin-top:14px" target="_blank" rel="noopener">💬 Prefer WhatsApp?</a>
@@ -226,12 +232,12 @@ html{scroll-behavior:smooth}
 
 <div class="bt-form">
 <h2>Apply as a Tutor</h2>
-<p>Tell us about yourself and what you teach.</p>
+<p>The more detail you give, the better we can match you. It takes about 10 minutes.</p>
 
 <form id="tutorForm" novalidate>
 <div class="bt-hp" aria-hidden="true"><label>Leave this empty<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
 
-<h3>👤 About You</h3>
+<h3>👤 Basic Information</h3>
 <div class="bt-row">
 <div class="bt-f"><label for="full_name">Full Name *</label><input type="text" id="full_name" name="full_name" placeholder="e.g. Ayesha Malik" required></div>
 <div class="bt-f"><label for="gender">Gender *</label><select id="gender" name="gender" required><option value="">Select</option><option>Male</option><option>Female</option></select><small>Used only to match families who prefer a male or female tutor.</small></div>
@@ -241,15 +247,40 @@ html{scroll-behavior:smooth}
 <div class="bt-f"><label for="email">Email Address *</label><input type="email" id="email" name="email" placeholder="e.g. name@gmail.com" required></div>
 </div>
 <div class="bt-row">
-<div class="bt-f"><label for="city">Your City *</label>
+<div class="bt-f"><label for="city">City *</label>
 <select id="city" name="city" required><option value="">Select city</option><option>Lahore</option><option>Islamabad</option><option>Karachi</option><option>Rawalpindi</option><option>Faisalabad</option><option>Multan</option><option>Sahiwal</option><option>Pakpattan</option><option>Arifwala</option><option>Other city</option></select></div>
 <div class="bt-f"><label for="area">Area / Locality *</label><input type="text" id="area" name="area" placeholder="e.g. Johar Town, Block M" required></div>
 </div>
-<div class="bt-f" style="max-width:240px"><label for="age">Age *</label><input type="number" id="age" name="age" min="18" max="80" placeholder="e.g. 26" required></div>
+<div class="bt-row">
+<div class="bt-f"><label for="country">Country *</label><input type="text" id="country" name="country" value="Pakistan" required></div>
+<div class="bt-f"><label for="age">Age *</label><input type="number" id="age" name="age" min="18" max="80" placeholder="e.g. 26" required></div>
+</div>
 
-<h3>📚 What You Teach</h3>
+<div class="bt-f bt-box b1">
+<span class="lb">👤 Extended Personal Details (Optional)</span>
+<div class="bt-row">
+<div class="bt-f"><label for="nationality">Nationality</label><input type="text" id="nationality" name="nationality" placeholder="e.g. Pakistani"></div>
+<div class="bt-f"><label for="marital_status">Marital Status</label><select id="marital_status" name="marital_status"><option value="">Select</option><option>Single</option><option>Married</option><option>Prefer not to say</option></select></div>
+</div>
+<div class="bt-row">
+<div class="bt-f"><label for="alternate_contact">Alternate Contact</label><input type="tel" id="alternate_contact" name="alternate_contact" placeholder="e.g. 0321 0000000"></div>
+<div class="bt-f"><label for="emergency_contact">Emergency Contact</label><input type="tel" id="emergency_contact" name="emergency_contact" placeholder="e.g. 0333 0000000"></div>
+</div>
+<small>Shared only with our verification team. Never shown to families.</small>
+</div>
+
+<h3>💼 Professional Information</h3>
+<div class="bt-row">
+<div class="bt-f"><label for="primary_subject">Primary Subject *</label>
+<select id="primary_subject" name="primary_subject" required><option value="">Select subject</option><option>Mathematics</option><option>Physics</option><option>Chemistry</option><option>Biology</option><option>English</option><option>Urdu</option><option>Computer Science</option><option>Business Studies</option><option>Accounting</option><option>Economics</option><option>Statistics</option><option>Islamiat / Pak Studies</option><option>Quran</option><option>All subjects (Primary)</option><option>Other</option></select></div>
+<div class="bt-f"><label for="curriculum">Curriculum / Board Expertise *</label>
+<select id="curriculum" name="curriculum" required><option value="">Select</option><option>Punjab Board (Matric / FSc)</option><option>Federal Board</option><option>Sindh Board</option><option>Cambridge O Level</option><option>Cambridge A Level</option><option>IGCSE</option><option>Edexcel</option><option>IB</option><option>American Curriculum</option><option>Multiple boards</option></select></div>
+</div>
+<div class="bt-row">
 <div class="bt-f"><label for="mode">Teaching Mode *</label>
 <select id="mode" name="mode" required><option value="">Select</option><option>Home tuition</option><option>Online only</option><option>Home and online</option></select></div>
+<div class="bt-f"><label for="fee">Expected Monthly Fee (PKR)</label><input type="text" id="fee" name="fee" placeholder="e.g. 8,000 per subject"><small>Optional. The final fee is agreed with the family.</small></div>
+</div>
 <div class="bt-f"><span class="lb">Classes You Can Teach *</span>
 <div class="bt-checks">
 <label><input type="checkbox" name="classes" value="Pre-School to Primary"> Pre-School to Primary</label>
@@ -262,33 +293,104 @@ html{scroll-behavior:smooth}
 <label><input type="checkbox" name="classes" value="MDCAT / ECAT"> MDCAT / ECAT</label>
 <label><input type="checkbox" name="classes" value="Quran / Spoken English"> Quran / Spoken English</label>
 </div></div>
-<div class="bt-f"><label for="subjects">Subjects You Teach *</label><input type="text" id="subjects" name="subjects" placeholder="e.g. Maths, Physics, Chemistry" required><small>List your strongest subjects first.</small></div>
 <div class="bt-f"><label for="areas_travel">Areas You Can Travel To (home tutors)</label><input type="text" id="areas_travel" name="areas_travel" placeholder="e.g. Johar Town, Wapda Town, Model Town"></div>
-
-<h3>🎓 Qualification and Experience</h3>
 <div class="bt-row">
 <div class="bt-f"><label for="qualification">Highest Qualification *</label><input type="text" id="qualification" name="qualification" placeholder="e.g. BS Mathematics" required></div>
 <div class="bt-f"><label for="university">University / Institute *</label><input type="text" id="university" name="university" placeholder="e.g. University of the Punjab" required></div>
 </div>
 <div class="bt-row">
-<div class="bt-f"><label for="experience">Teaching Experience *</label>
-<select id="experience" name="experience" required><option value="">Select</option><option>No experience yet</option><option>Less than 1 year</option><option>1-2 years</option><option>3-5 years</option><option>5+ years</option></select></div>
-<div class="bt-f"><label for="fee">Expected Monthly Fee (PKR)</label><input type="text" id="fee" name="fee" placeholder="e.g. 8,000 per subject"><small>Optional. The final fee is agreed with the family.</small></div>
+<div class="bt-f"><label for="teaching_experience">Total Teaching Experience *</label>
+<select id="teaching_experience" name="teaching_experience" required><option value="">Select</option><option>Fresh (no experience)</option><option>Less than 1 year</option><option>1-2 years</option><option>3-5 years</option><option>5+ years</option></select></div>
+<div class="bt-f"><label for="english_proficiency">English Proficiency *</label>
+<select id="english_proficiency" name="english_proficiency" required><option value="">Select</option><option>Native / Bilingual</option><option>Fluent</option><option>Good</option><option>Intermediate</option><option>Basic</option></select></div>
 </div>
-<div class="bt-f"><label for="experience_details">Past Teaching Details</label><textarea id="experience_details" name="experience_details" placeholder="Schools, academies or private students you taught, with subjects and years."></textarea></div>
-<div class="bt-f"><label for="certifications">Certificates, Results or Achievements</label><textarea id="certifications" name="certifications" placeholder="e.g. Gold medal, IELTS score, teaching training, student results"></textarea></div>
+
+<div class="bt-f bt-box b1">
+<label for="education_history">🎓 Complete Education History</label>
+<small>List every qualification, from Matric to your latest degree, plus any short courses.<br><strong>Format:</strong> Degree - Institute - Year - Marks / GPA</small>
+<textarea id="education_history" name="education_history" rows="6" placeholder="e.g.
+Matric - Govt. Girls High School Sahiwal - 2015 - 1020/1100
+FSc Pre-Medical - Govt. College Sahiwal - 2017 - 925/1100
+BS Chemistry - GC University Lahore - 2021 - 3.6 GPA
+MPhil Chemistry - University of the Punjab - 2023 - 3.8 GPA"></textarea>
+</div>
+
+<div class="bt-f bt-box b2">
+<label for="teaching_history">💼 Detailed Teaching Experience</label>
+<small>Add every school, academy or private student group you taught.<br><strong>Format:</strong> Place - Role - Subject / Class - Years</small>
+<textarea id="teaching_history" name="teaching_history" rows="6" placeholder="e.g.
+Allied School Lahore - Chemistry Teacher - Class 9 to 12 - 2021-2023
+Private Academy Johar Town - Subject Specialist - O Level Chemistry - 2023-2024
+Home Tuition - Private Tutor - Science, Class 6 to 10 - 2024-Present"></textarea>
+</div>
+
+<div class="bt-f bt-box b3">
+<label for="subject_expertise">📚 Subject Expertise (Detailed)</label>
+<small>Which subjects, chapters or topics are your strongest? Mention the class or syllabus level.</small>
+<textarea id="subject_expertise" name="subject_expertise" rows="4" placeholder="e.g.
+- Chemistry: Matric, FSc, O Level, A Level
+- Strong in organic chemistry and stoichiometry
+- Past paper practice for Cambridge Paper 2 and 4"></textarea>
+</div>
+
+<div class="bt-f bt-box b1">
+<label for="skills">⭐ Skills</label>
+<small>Teaching, technical and people skills, separated by commas.</small>
+<textarea id="skills" name="skills" rows="3" placeholder="e.g. Lesson planning, past paper practice, weekly tests, parent feedback, Zoom, Google Meet, digital whiteboard, patient with weak students"></textarea>
+</div>
+
+<div class="bt-f bt-box b3">
+<label for="languages">🌍 Languages</label>
+<small>Write your level next to each language.</small>
+<textarea id="languages" name="languages" rows="3" placeholder="e.g. Urdu (Native), English (Fluent), Punjabi (Native), Arabic (Basic)"></textarea>
+</div>
+
+<div class="bt-f bt-box b2">
+<label for="certifications">📜 Certifications & Training</label>
+<small>Teacher training, online teaching courses, language tests or any other certificate.</small>
+<textarea id="certifications" name="certifications" rows="3" placeholder="e.g.
+Teacher Training Course (Punjab University, 2022)
+Online Teaching Basics (Coursera, 2023)
+IELTS Band 7.0 (British Council, 2022)"></textarea>
+</div>
+
+<div class="bt-f bt-box b1">
+<label for="achievements">🏆 Achievements</label>
+<small>Awards, scholarships, student results, publications or any recognition.</small>
+<textarea id="achievements" name="achievements" rows="4" placeholder="e.g.
+- Merit scholarship during BS
+- 12 of 15 students scored A in Class 10 Chemistry (2023)
+- Best Teacher of the Year at my academy"></textarea>
+</div>
+
+<div class="bt-f bt-box b3">
+<label for="personal_statement">📝 Personal Statement / Cover Letter</label>
+<small>Describe your teaching approach, how you handle weak students and why families should choose you.</small>
+<textarea id="personal_statement" name="personal_statement" rows="5" placeholder="e.g. I start every lesson by finding what the student already knows, then build step by step with examples from daily life..."></textarea>
+</div>
+
+<div class="bt-f bt-box b2">
+<label for="references_info">👥 References (Optional)</label>
+<small>A former principal, employer, senior colleague or professor who can speak about your teaching.</small>
+<textarea id="references_info" name="references_info" rows="3" placeholder="e.g.
+1. Mr. Imran Sheikh - Principal, Allied School Lahore - 0300 0000000
+2. Dr. Sana Riaz - Professor, GC University Lahore - sana@example.edu.pk"></textarea>
+</div>
+
+<div class="bt-f"><label for="hobbies">🎨 Hobbies & Interests (Optional)</label><input type="text" id="hobbies" name="hobbies" placeholder="e.g. Reading, Cricket, Calligraphy, Volunteering"></div>
+
+<div class="bt-f"><label for="about_tutor">📖 Brief About You *</label><textarea id="about_tutor" name="about_tutor" placeholder="Two or three lines: who you are, what you teach and what students gain from your classes." required></textarea></div>
 
 <h3>⏰ Availability</h3>
 <div class="bt-row">
-<div class="bt-f"><label for="hours">Hours Per Week *</label><input type="text" id="hours" name="hours" placeholder="e.g. 12 hours" required></div>
-<div class="bt-f"><label for="timing">Preferred Days and Timing *</label><input type="text" id="timing" name="timing" placeholder="e.g. Mon-Fri, 4 PM to 9 PM" required></div>
+<div class="bt-f"><label for="availability">Hours Per Week *</label><input type="text" id="availability" name="availability" placeholder="e.g. 15 hours" required></div>
+<div class="bt-f"><label for="preferred_timing">Preferred Days and Timing *</label><input type="text" id="preferred_timing" name="preferred_timing" placeholder="e.g. Mon-Sat, 4 PM to 9 PM" required></div>
 </div>
-<div class="bt-f"><label for="about">Tell Us About Your Teaching Style *</label><textarea id="about" name="about" placeholder="How do you help a weak student improve? What makes parents and students comfortable with you?" required></textarea></div>
 
-<h3>📎 Files</h3>
+<h3>📎 File Uploads</h3>
 <div class="bt-file"><span class="lb">📸 Profile Photo *</span><small>Clear, professional photo. Max 5 MB.</small><input type="file" id="profile_photo" name="profile_photo" accept="image/*" required></div>
-<div class="bt-file"><span class="lb">📄 CV / Resume (PDF) *</span><small>Used only for our internal verification. Max 5 MB.</small><input type="file" id="personal_cv" name="personal_cv" accept=".pdf,application/pdf" required></div>
-<div class="bt-file"><span class="lb">🎬 Intro Teaching Video (optional)</span><small>3 to 5 minutes teaching one topic. Max 30 MB, MP4 or WebM.</small><input type="file" id="demo_video" name="demo_video" accept="video/*"></div>
+<div class="bt-file"><span class="lb">🎬 Demo Video (5 to 10 minutes) *</span><small>Teach one topic from your subject as you would in a real class. Max 50 MB, MP4 or WebM.</small><input type="file" id="demo_video" name="demo_video" accept="video/*" required></div>
+<div class="bt-file"><span class="lb">📄 Personal CV (PDF) *</span><small>Used only for our internal verification and never shown to families. PDF only, max 5 MB.</small><input type="file" id="personal_cv" name="personal_cv" accept=".pdf,application/pdf" required></div>
 
 <label class="bt-consent"><input type="checkbox" id="consent" required><span>I confirm the details are true and I agree that Levels Academy may contact me and verify my documents.</span></label>
 
@@ -309,7 +411,7 @@ html{scroll-behavior:smooth}
 <details><summary>Who can apply as a tutor at Levels Academy?</summary><p>Graduates, university students in their later years, and experienced teachers who are strong in at least one subject can apply. Both male and female tutors are welcome.</p></details>
 <details><summary>Is there a fee to register?</summary><p>No. Please do not pay anyone for registration. If a family and tutor agree to start classes, the monthly fee is discussed clearly before the first lesson.</p></details>
 <details><summary>Can I teach online from home?</summary><p>Yes. Choose online, home or both when you apply. Online tutors need a stable internet connection and a quiet place to teach on Zoom or Google Meet.</p></details>
-<details><summary>Do you need a demo video?</summary><p>A short intro video is optional but helps. It lets us see how clearly you explain a topic and speeds up approval.</p></details>
+<details><summary>Is a demo video required?</summary><p>Yes. A 5 to 10 minute demo video lets us see how clearly you explain a topic. It is used only for our review and helps us match you with the right students.</p></details>
 <details><summary>How soon will I hear back?</summary><p>We try to contact shortlisted applicants on WhatsApp within a few days. After a short call and document check, your profile goes into our matching list.</p></details>
 <details><summary>Looking for a tutor instead?</summary><p>Visit our <a href="find-tutor.html">Find a Tutor</a> page, or see the <a href="cities.html">cities we serve</a>.</p></details>
 </div>
@@ -380,7 +482,7 @@ document.getElementById('tutorForm').addEventListener('submit', async function (
   const video = form.demo_video.files[0];
   if (photo && photo.size > 5 * 1024 * 1024) { show('err', 'Profile photo must be under 5 MB.'); return; }
   if (cv && cv.size > 5 * 1024 * 1024) { show('err', 'CV must be under 5 MB.'); return; }
-  if (video && video.size > 30 * 1024 * 1024) { show('err', 'Intro video must be under 30 MB.'); return; }
+  if (video && video.size > 50 * 1024 * 1024) { show('err', 'Demo video must be under 50 MB.'); return; }
 
   const summary = [
     'New Tutor Application - Levels Academy',
@@ -389,10 +491,10 @@ document.getElementById('tutorForm').addEventListener('submit', async function (
     'City: ' + form.city.value + ' (' + form.area.value + ')',
     'Mode: ' + form.mode.value,
     'Classes: ' + classes.join(', '),
-    'Subjects: ' + form.subjects.value,
+    'Primary subject: ' + form.primary_subject.value + ' (' + form.curriculum.value + ')',
     'Qualification: ' + form.qualification.value + ', ' + form.university.value,
-    'Experience: ' + form.experience.value,
-    'Availability: ' + form.hours.value + ' | ' + form.timing.value,
+    'Experience: ' + form.teaching_experience.value,
+    'Availability: ' + form.availability.value + ' | ' + form.preferred_timing.value,
     'Phone: ' + form.contact.value
   ].join('\n');
 
@@ -400,8 +502,8 @@ document.getElementById('tutorForm').addEventListener('submit', async function (
 
   // No backend yet: send the summary on WhatsApp
   if (!API_URL) {
-    window.open('https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(summary + '\n\n(I will send my photo and CV here.)'), '_blank', 'noopener');
-    show('ok', 'WhatsApp is opening with your details. Please send your photo and CV in the same chat to complete your application.');
+    window.open('https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(summary + '\n\n(I will send my photo, CV and demo video here.)'), '_blank', 'noopener');
+    show('ok', 'WhatsApp is opening with your details. Please send your photo, CV and demo video in the same chat to complete your application.');
     btn.disabled = false;
     return;
   }
